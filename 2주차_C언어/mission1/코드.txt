@@ -1,0 +1,16 @@
+#include    <stdio.h>
+#include    <cs50.h>
+
+int main(void){
+    int watermalonCnt = 5;
+    int order = get_int("들어온 주문을 입력하세요\n");
+    int price = 10000;
+    float tax = price * 0.1;
+
+
+
+    printf("주문건수 : %i건\n", order);
+    printf("기존 재고량 : %i개\n", watermalonCnt);
+    printf("남은 재고량 : %i개\n", watermalonCnt - order);
+    printf("매출액(부가세포함) : %.0f원\n", order * (price + tax));
+}

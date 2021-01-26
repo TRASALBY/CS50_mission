@@ -1,0 +1,16 @@
+#include    <stdio.h>
+#include    <cs50.h>
+
+int main(void){
+    int principal = 0;      //원금
+    float interest = 0.012;   //이자
+    float goal = 0;           //목표금
+
+    principal = get_int("예금액을 입력하세요\n");
+
+    goal = principal * (1 + interest);
+
+    printf("만기시 받는 금액은 %.0f원 입니다.\n",goal);
+
+    
+}
