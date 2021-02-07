@@ -7,11 +7,9 @@ int findCenter(int arr[], int count);
 int main(void) {
 
     int arr[N] = { 0, 4, 6, 9 };
-
     int center;
-
+    
     center = findCenter(arr, N);
-
     printf("%d", center);
 
 }
